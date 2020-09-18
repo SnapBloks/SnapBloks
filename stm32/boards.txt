@@ -13,7 +13,7 @@ SnapBloksLED.name=SnapBloks LED
 
 SnapBloksLED.build.core=STM32:arduino
 SnapBloksLED.build.board=SnapBloksLED
-SnapBloksLED.build.extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial}
+SnapBloksLED.build.extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial} {build.bootloader_flags}
 
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_RED=SB072-LED-RED
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_RED.upload.maximum_size=65536
@@ -24,6 +24,8 @@ SnapBloksLED.menu.pnum.SNAPBLOKS_LED_RED.build.series=STM32F0xx
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_RED.build.product_line=STM32F072xB
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_RED.build.variant=SB072_LED_RED
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_RED.build.cmsis_lib_gcc=arm_cortexM0l_math
+SnapBloksLED.menu.pnum.SNAPBLOKS_LED_RED.build.startup_file=-DCUSTOM_STARTUP_FILE
+SnapBloksLED.menu.pnum.SNAPBLOKS_LED_RED.build.bootloader_flags=-DVARIANT_SUPPORT_SOFTDFU
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_RED.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
 
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_YELLOW=SB072-LED-YELLOW
@@ -35,6 +37,8 @@ SnapBloksLED.menu.pnum.SNAPBLOKS_LED_YELLOW.build.series=STM32F0xx
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_YELLOW.build.product_line=STM32F072xB
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_YELLOW.build.variant=SB072_LED_YELLOW
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_YELLOW.build.cmsis_lib_gcc=arm_cortexM0l_math
+SnapBloksLED.menu.pnum.SNAPBLOKS_LED_YELLOW.build.startup_file=-DCUSTOM_STARTUP_FILE
+SnapBloksLED.menu.pnum.SNAPBLOKS_LED_YELLOW.build.bootloader_flags=-DVARIANT_SUPPORT_SOFTDFU
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_YELLOW.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
 
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_GREEN=SB072-LED-GREEN
@@ -46,6 +50,8 @@ SnapBloksLED.menu.pnum.SNAPBLOKS_LED_GREEN.build.series=STM32F0xx
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_GREEN.build.product_line=STM32F072xB
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_GREEN.build.variant=SB072_LED_GREEN
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_GREEN.build.cmsis_lib_gcc=arm_cortexM0l_math
+SnapBloksLED.menu.pnum.SNAPBLOKS_LED_GREEN.build.startup_file=-DCUSTOM_STARTUP_FILE
+SnapBloksLED.menu.pnum.SNAPBLOKS_LED_GREEN.build.bootloader_flags=-DVARIANT_SUPPORT_SOFTDFU
 SnapBloksLED.menu.pnum.SNAPBLOKS_LED_GREEN.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
 
 SnapBloksLED.menu.xserial.generic=Enabled (generic 'Serial')
@@ -95,3 +101,9 @@ SnapBloksLED.menu.upload_method.dfuMethod=STM32CubeProgrammer (DFU)
 SnapBloksLED.menu.upload_method.dfuMethod.upload.protocol=2
 SnapBloksLED.menu.upload_method.dfuMethod.upload.options=-g
 SnapBloksLED.menu.upload_method.dfuMethod.upload.tool=STM32:stm32CubeProg
+
+SnapBloksLED.menu.upload_method.dfusMethod=Soft-DFU Upload
+SnapBloksLED.menu.upload_method.dfusMethod.upload.protocol=softdfu
+SnapBloksLED.menu.upload_method.dfusMethod.upload.tool=softdfu_upload
+SnapBloksLED.menu.upload_method.dfusMethod.upload.usbID=0483:df11
+SnapBloksLED.menu.upload_method.dfusMethod.upload.altID=0

@@ -1,2 +1,12 @@
 name=SnapBloks STM32 Boards
 version=1.0.0
+
+# STM32 built-in DFU upload with Soft-DFU protocol
+tools.softdfu_upload.path={runtime.hardware.path}/tools/win
+tools.softdfu_upload.path.macosx={runtime.hardware.path}/tools/macosx
+tools.softdfu_upload.path.linux={runtime.hardware.path}/tools/linux
+tools.softdfu_upload.cmd.path={path}/softdfu_upload.sh
+tools.softdfu_upload.cmd.path.windows={path}/softdfu_upload.bat
+tools.softdfu_upload.upload.params.verbose=
+tools.softdfu_upload.upload.params.quiet=
+tools.softdfu_upload.upload.pattern="{cmd.path}" {serial.port.file} {upload.altID} {upload.usbID} "{build.path}/{build.project_name}.bin"
