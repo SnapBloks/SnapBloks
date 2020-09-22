@@ -11,7 +11,7 @@ menu.upload_method=Upload method
 
 SnapBloksLED.name=SnapBloks LED
 
-SnapBloksLED.build.core=STM32:arduino
+SnapBloksLED.build.core=arduino
 SnapBloksLED.build.board=SnapBloksLED
 SnapBloksLED.build.extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial} {build.bootloader_flags}
 
