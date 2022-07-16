@@ -114,11 +114,15 @@ extern "C" {
 #define NUM_ANALOG_FIRST        31
 
 //On-board LED pin number
-#define LED_BUILTIN             PC9
-#define LED_GREEN               LED_BUILTIN
-#define LED_ORANGE              PC8
-#define LED_BLUE                PC7
-#define LED_RED                 PC6
+#define LED_BUILTIN             PB15
+#define LED1                    LED_BUILTIN
+#define LED2                    PB2
+#define LED3                    PA5
+#define LED4                    PA4
+#define LED5                    PB9
+#define LED6                    PB8
+#define LED7                    PB3
+#define LED8                    PA15
 
 //On-board user button
 #define USER_BTN                PA0
