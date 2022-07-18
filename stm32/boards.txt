@@ -28,6 +28,19 @@ SnapBloks.menu.pnum.SNAPBLOKS_Discovery.build.startup_file=-DCUSTOM_STARTUP_FILE
 SnapBloks.menu.pnum.SNAPBLOKS_Discovery.build.bootloader_flags=-DVARIANT_SUPPORT_SOFTDFU
 SnapBloks.menu.pnum.SNAPBLOKS_Discovery.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
 
+SnapBloks.menu.pnum.SNAPBLOKS_IMU=SB072-IMU
+SnapBloks.menu.pnum.SNAPBLOKS_IMU.upload.maximum_size=65536
+SnapBloks.menu.pnum.SNAPBLOKS_IMU.upload.maximum_data_size=16384
+SnapBloks.menu.pnum.SNAPBLOKS_IMU.build.mcu=cortex-m0
+SnapBloks.menu.pnum.SNAPBLOKS_IMU.build.board=SB072_IMU
+SnapBloks.menu.pnum.SNAPBLOKS_IMU.build.series=STM32F0xx
+SnapBloks.menu.pnum.SNAPBLOKS_IMU.build.product_line=STM32F072xB
+SnapBloks.menu.pnum.SNAPBLOKS_IMU.build.variant=SB072_IMU
+SnapBloks.menu.pnum.SNAPBLOKS_IMU.build.cmsis_lib_gcc=arm_cortexM0l_math
+SnapBloks.menu.pnum.SNAPBLOKS_IMU.build.startup_file=-DCUSTOM_STARTUP_FILE
+SnapBloks.menu.pnum.SNAPBLOKS_IMU.build.bootloader_flags=-DVARIANT_SUPPORT_SOFTDFU
+SnapBloks.menu.pnum.SNAPBLOKS_IMU.build.enable_usb={build.usb_flags} -DUSBD_USE_CDC
+
 SnapBloks.menu.pnum.SNAPBLOKS_LED_RED=SB072-LED-RED
 SnapBloks.menu.pnum.SNAPBLOKS_LED_RED.upload.maximum_size=65536
 SnapBloks.menu.pnum.SNAPBLOKS_LED_RED.upload.maximum_data_size=16384
