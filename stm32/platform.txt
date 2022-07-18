@@ -1,6 +1,11 @@
 name=SnapBloks STM32 Boards
 version=1.0.0
 
+recipe.hooks.sketch.prebuild.1.pattern=echo sketch compilation started at
+recipe.hooks.sketch.prebuild.2.pattern=date
+
+recipe.hooks.linking.postlink.1.pattern=echo linking is complete
+
 # STM32 built-in DFU upload with Soft-DFU protocol
 tools.softdfu_upload.path={runtime.hardware.path}/tools/win
 tools.softdfu_upload.path.macosx={runtime.hardware.path}/tools/macosx
